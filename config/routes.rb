@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :fixtures
   get 'pages/about'
 
   get 'pages/contact'

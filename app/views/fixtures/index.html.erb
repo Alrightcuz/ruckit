@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Fixtures</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Province</th>
+      <th>County</th>
+      <th>City</th>
+      <th>Club</th>
+      <th>Age</th>
+      <th>Date</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @fixtures.each do |fixture| %>
+      <tr>
+        <td><%= fixture.province %></td>
+        <td><%= fixture.county %></td>
+        <td><%= fixture.city %></td>
+        <td><%= fixture.club %></td>
+        <td><%= fixture.age %></td>
+        <td><%= fixture.date %></td>
+        <td><%= fixture.description %></td>
+        <td><%= link_to 'Show', fixture %></td>
+        <td><%= link_to 'Edit', edit_fixture_path(fixture) %></td>
+        <td><%= link_to 'Destroy', fixture, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Fixture', new_fixture_path %>

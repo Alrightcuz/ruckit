@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Province:</strong>
+  <%= @fixture.province %>
+</p>
+
+<p>
+  <strong>County:</strong>
+  <%= @fixture.county %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @fixture.city %>
+</p>
+
+<p>
+  <strong>Club:</strong>
+  <%= @fixture.club %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @fixture.age %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @fixture.date %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @fixture.description %>
+</p>
+
+<%= link_to 'Edit', edit_fixture_path(@fixture) %> |
+<%= link_to 'Back', fixtures_path %>
